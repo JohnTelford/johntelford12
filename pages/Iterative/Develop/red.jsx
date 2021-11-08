@@ -1,13 +1,11 @@
 
-export const Red = (message) => (
-    <div style={{
-        padding: '15px', 
-        backgroundColor: 'RED',
-        color: "white"
+export const Red = ({message}) => {
+    return <div style={{
+        padding: '15px',
+        backgroundColor: 'red',
+        color: 'white'
     }} >
-        <p>
-            Danger
-            watchout there be dragons
-        </p>
-    </div>)
+        {message}
+    </div>
+}
     export default Red;
