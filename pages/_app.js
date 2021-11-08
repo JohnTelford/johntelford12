@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
           <div>
           <article className="
             prose prose-lg
+            max-w-none
             box-border h w-52
             border-none
             py-3
@@ -32,7 +33,7 @@ function MyApp({ Component, pageProps }) {
             ">
 
           Work in Progress<br/>
-          V 0.1.8
+          V 0.1.9
 
     </article>
     </div>
