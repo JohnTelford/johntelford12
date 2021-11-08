@@ -1,3 +1,4 @@
+import Red from "./red";
 
 ## Test MDX
 
@@ -127,7 +128,7 @@ Renders this table
 </div>
 ```
 
-- Renders this
+- Renders this JSX
 
 <div style={{ padding: '15px', backgroundColor: 'pink' }}>
   This is JSX component
@@ -135,37 +136,33 @@ Renders this table
 
 ---
 
+
 This external JSX component
 
 ```
-export const Red = (message) => (
-    <div style={{
-        padding: '15px', 
-        backgroundColor: 'RED',
-        color: "white"
+export const Red = ({msg}) => {
+    return <div style={{
+        padding: '15px',
+        backgroundColor: 'black',
+        color: 'black'
     }} >
-        <p>
-            Danger
-            watch out there be dragons
-        </p>
-    </div>)
+        {msg}
+    </div>
+}
     export default Red;
     
 ```
 
-```
-
-import Red from "./red";
-
-<Red>"Props Message"</Red>
-
-```
-
 Renders this
 
-import Red from "./red";
+>import Red from "./red"; must at top of file
 
-<Red>"Props Message"</Red>
+````
+<Red message="There be Dragons. That's OK because I eat dragons for lunch"/>
+````
+
+<Red message="There be Dragons. That's OK because I eat dragons for lunch"/>
+
 
 ---
 
