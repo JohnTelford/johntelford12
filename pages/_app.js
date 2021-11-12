@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
             ">
 
           Work in Progress<br/>
-          V 0.1.9
+          V 0.1.12
 
     </article>
     </div>
